@@ -47,3 +47,9 @@ REST has been the web standard for APIs for over a decade.  The new contender is
 For general use we recommend REST due to the maturity of the technology and tooling.  An exception is when combining services in a gateway abstraction pattern. In this scenario, evaluate and consider GraphQL.  Be advised, tooling for GraphQL is far more mature for nodejs than for other languages.
 
 [meeting notes](.decisions/rest-vs-graphql.md)
+
+## [GraphQL Library](./decisions/graphql-library.md)
+
+We recommend the [Apollo](https://www.apollographql.com/) library when implementing GraphQL on Excella projects.  But, this recommendation is primarily due to the fact that it is only library in which Excellians have project experience.  The secondary factor is that it works with both React and Angular.
+
+The runner up is [Relay](https://relay.dev/), backed by Facebook.  It has quickly caught up with Apollo in popularity.  But, Excella has very little expertise with it and it is only compatible with React.
