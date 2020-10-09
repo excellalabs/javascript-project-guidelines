@@ -39,3 +39,11 @@ We recommend standing on the shoulders of giants whenever possible. For that rea
 Angular is a very opinionated framework, and thus has a highly opinionated community. For the most part, those opinions are right, and should be easy to follow. We are actively choosing to focus on building out recommendations for React first, since it has far fewer strong opinions and we are using it more and more on client work.
 
 If you need help with Angular, please don't hesitate to reach out via Slack. Angular is largely favored over React by JavaScript developers at Excella, so do not take the lack of information here as any indicator that Angular is perfect, or that we don't have opinions about it.
+
+# [API Architecture](./decisions/rest-vs-graphql.md)
+
+REST has been the web standard for APIs for over a decade.  The new contender is GraphQL, which has gained traction.  GraphQL solves the issues of over-fetching and under-fetching. It uses resolvers to aggregate sources into one call and allows the client to define what data they need. Unfortunately, the tooling around testing, traceablity, and code generation are not mature enough in all languages to recommend it for general use.  
+
+For general use we recommend REST due to the maturity of the technology and tooling.  An exception is when combining services in a gateway abstraction pattern. In this scenario, evaluate and consider GraphQL.  Be advised, tooling for GraphQL is far more mature for nodejs than for other languages.
+
+[meeting notes](.decisions/rest-vs-graphql.md)
