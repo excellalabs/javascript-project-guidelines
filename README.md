@@ -34,8 +34,8 @@ The React community offers many options for component test harnesses, each with 
 
 We recommend standing on the shoulders of giants whenever possible. For that reason, we suggest leveraging Google's Material UI design spec via [@material-ui/core](https://www.npmjs.com/package/@material-ui/core). Where that fails to offer something you need, we suggest looking to [KendoUI](https://demos.telerik.com/kendo-ui/) for a solution. We view building your own UI Component Library to be a last resort that should be avoided if at all possible.
 
-## [Forms Library](./decisions/forms.md)
-We reccomend using Formik and Yup to handle form management in React. We have run into no big issues with it, it has been around the longest, and we have the most experience with it, so we see no reason to use another less mature library instead.
+## [Forms Library](./decisions/react-forms.md)
+We reccomend using [Formik](https://formik.org/) and [Yup](https://github.com/jquense/yup) to handle form management in React. We have run into no big issues with it, it has been around the longest, and we have the most experience with it, so we see no reason to use another less mature library instead.
 
 # Angular
 
