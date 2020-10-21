@@ -35,7 +35,12 @@ The React community offers many options for component test harnesses, each with 
 We recommend standing on the shoulders of giants whenever possible. For that reason, we suggest leveraging Google's Material UI design spec via [@material-ui/core](https://www.npmjs.com/package/@material-ui/core). Where that fails to offer something you need, we suggest looking to [KendoUI](https://demos.telerik.com/kendo-ui/) for a solution. We view building your own UI Component Library to be a last resort that should be avoided if at all possible.
 
 ## [Forms Library](./decisions/react-forms.md)
+
 We reccomend using [Formik](https://formik.org/) and [Yup](https://github.com/jquense/yup) to handle form management in React. We have run into no big issues with it, it has been around the longest, and we have the most experience with it, so we see no reason to use another less mature library instead.
+
+## [React Class vs. Function Components](./decisions/react-class-vs-function-components.md)
+
+Both class and function components offer the same capabilities with slightly different syntax. We recommend function components for their simplicity and choosing to add hooks if you need state or side effects.
 
 # Angular
 
@@ -45,14 +50,14 @@ If you need help with Angular, please don't hesitate to reach out via Slack. Ang
 
 # [API Architecture](./decisions/rest-vs-graphql.md)
 
-REST has been the web standard for APIs for over a decade.  The new contender is GraphQL, which has gained traction.  GraphQL solves the issues of over-fetching and under-fetching. It uses resolvers to aggregate sources into one call and allows the client to define what data they need. Unfortunately, the tooling around testing, traceablity, and code generation are not mature enough in all languages to recommend it for general use.  
+REST has been the web standard for APIs for over a decade. The new contender is GraphQL, which has gained traction. GraphQL solves the issues of over-fetching and under-fetching. It uses resolvers to aggregate sources into one call and allows the client to define what data they need. Unfortunately, the tooling around testing, traceablity, and code generation are not mature enough in all languages to recommend it for general use.
 
-For general use we recommend REST due to the maturity of the technology and tooling.  An exception is when combining services in a gateway abstraction pattern. In this scenario, evaluate and consider GraphQL.  Be advised, tooling for GraphQL is far more mature for nodejs than for other languages.
+For general use we recommend REST due to the maturity of the technology and tooling. An exception is when combining services in a gateway abstraction pattern. In this scenario, evaluate and consider GraphQL. Be advised, tooling for GraphQL is far more mature for nodejs than for other languages.
 
 [meeting notes](.decisions/rest-vs-graphql.md)
 
 ## [GraphQL Library](./decisions/graphql-library.md)
 
-We recommend the [Apollo](https://www.apollographql.com/) library when implementing GraphQL on Excella projects.  But, this recommendation is primarily due to the fact that it is only library in which Excellians have project experience.  The secondary factor is that it works with both React and Angular.
+We recommend the [Apollo](https://www.apollographql.com/) library when implementing GraphQL on Excella projects. But, this recommendation is primarily due to the fact that it is only library in which Excellians have project experience. The secondary factor is that it works with both React and Angular.
 
-The runner up is [Relay](https://relay.dev/), backed by Facebook.  It has quickly caught up with Apollo in popularity.  But, Excella has very little expertise with it and it is only compatible with React.
+The runner up is [Relay](https://relay.dev/), backed by Facebook. It has quickly caught up with Apollo in popularity. But, Excella has very little expertise with it and it is only compatible with React.
