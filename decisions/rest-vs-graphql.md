@@ -1,12 +1,13 @@
 # API Design
 
-We recommend that APIs be built with REST.  The exception may be services built sepecifically to be gateways that combine multiple APIs.
+We recommend that APIs be built with REST. The exception may be services built sepecifically to be gateways that combine multiple APIs.
 
 ## Why
 
-The face that REST is mature, proven, and ubiquious outweight the benefits that GraphQL can provide.  Talent is easy to find and tooling is extensive for REST.
+The face that REST is mature, proven, and ubiquious outweight the benefits that GraphQL can provide. Talent is easy to find and tooling is extensive for REST.
 
 ## Benefits
+
 ### REST
 
 - Familiarity, ease of learning
@@ -20,7 +21,7 @@ The face that REST is mature, proven, and ubiquious outweight the benefits that 
 
 ### GraphQL
 
-- Elinates over-fetching and under-fetching eliminating unneeded roundtrips and data transfer.
+- Eliminates over-fetching and under-fetching eliminating unneeded roundtrips and data transfer.
 - Can defer decisions on data modelling
 - Very effective for aggregating across multiple APIs
 - Further decouples front and back ends, simplifying what the clients need to know to get data by collapsing everything down to one “source”
@@ -28,6 +29,7 @@ The face that REST is mature, proven, and ubiquious outweight the benefits that 
 - Trims data down to just what’s needed, streamlining calls across multiple surfaces required to assemble the ask
 - Offers a playground UI that visualizes requests and supports testing
 - Can deprecate individual nodes on the graph, informing users that they should move to the new source/node
+- Can serve REST endpoints and be added in slowly first as a layer over REST API endpoints
 
 ## Negatives
 
@@ -38,10 +40,10 @@ The face that REST is mature, proven, and ubiquious outweight the benefits that 
 
 ### GraphQL
 
-- The whole shape of the graph is always exposed.  Can request anything, but trying to without the correct permissions will generate an error
+- The whole shape of the graph is always exposed. Can request anything, but trying to without the correct permissions will generate an error
 - Node deprecation is not easy to manage or implement
   - Nodes must have a unique name, so there’s no real advantage here over the API versioning
-- Still new and unrefined.  Lots of great concepts, but execution / implementation often lacks or is difficult
+- Still new and unrefined. Lots of great concepts, but execution / implementation often lacks or is difficult
   - Should probably never be used for a Tech Challenge
 - No specification like there is for OpenAPI
 - No contract to test
