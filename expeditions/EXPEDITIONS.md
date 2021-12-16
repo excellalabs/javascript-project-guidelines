@@ -12,7 +12,6 @@ To add the outcome of your own eXpedition, please do the following:
 - celebrate your contribution~ (you have bettered the Excella dev community and looked great doing it :) )
 
 <h2>Table of Contents:</h2>
-- THING YOU LEARNED | YOUR NAME | DATE ADDED (MM/DD/YYYY)
 
 | Topic  | Name | Date
 | ------------- | ------------- | ------------- |
