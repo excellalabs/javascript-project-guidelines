@@ -10,6 +10,12 @@ the rule. However if a project wants to deviate from these recommendations, they
 
 It was noticed that while a lot of projects at Excella use JavaScript, we are often using different tools and techniques. This hurts us in a few ways: We do the same research over and over again on projects to choose technologies, developers need to learn different technologies to do the same thing differently on different projects (which results in less expertise and longer ramp up times), we are unable to train individuals in certain areas of JavaScript unless we know what project they will be on, and it is harder to identify the right skillsets for projects forstaffing purposes. By alligning our approach we can cut down on some of this churn and difficulty.
 
+## What's the <a href="https://github.com/excellalabs/javascript-project-guidelines/blob/main/expeditions/EXPEDITIONS.md">"eXpeditions" Directory</a> about?
+
+In addition to vetted project guidelines, this repo also contains the findings of Excellians' PD time. These findings are stored here to preserve and radiate the knowledge Excellians have gleaned from their professional development.
+
+While these findings have not undergone the same scrutiny as the outcomes from JavaScript Death Battles™, they are valuable as they are varied.
+
 # General
 
 ## [Typescript](./decisions/typescript.md)
