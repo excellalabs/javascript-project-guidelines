@@ -15,6 +15,6 @@ To add the outcome of your own eXpedition, please do the following:
 
 | Topic  | Name | Date
 | ------------- | ------------- | ------------- |
-| <a href="https://github.com/mattcfilbert/javascript-project-guidelines/blob/patch-1/expeditions/template.md">Making a Template</a> | Matt Filbert | 12/16/20201 |
+| <a href="./template.md">Making a Template</a> | Matt Filbert | 12/16/20201 |
 
 
